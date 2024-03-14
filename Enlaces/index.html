@@ -28,10 +28,22 @@
     - Si necesitamos salir de la carpeta actual usaremos ../y se pone uno por cada nivel (carpeta) de la que 
     queremos salir.
     -->
+
+    <!-- 
+      Atributos de los enlaces
+      - Target: define donde se abrirá el recurso solicitado. Por norma general siempre que uses rutas absolutas
+      se colocaran como valor "_blank".
+
+      El valor por defecto es "_self" (es como no poner nada)
+
+      - Download: atributo booleano, sirve para descargar el recurso solicitado. IMPORTANTE, el recurso debe estar en
+      tu mismo servidor.
+     -->
    <h1>Home</h1>
    <!-- Uso de los enlaces (ruta relativa) -->
    <a href="./Paginas/contacto.html">Ir a contacto</a>
    <!-- Ruta absoluta -->
-   <a href="https://google.com">Ir a google</a>
+   <a href="https://google.com" target="_blank">Ir a google</a>
+   <a href="./assets/images/golden-cachorro.jpg" download="">Descargar perrito</a>
 </body>
 </html>
