@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 
+    Enlaces conocidos tambien por links popularmente. Su objetivo es conectar una página
+    web con otra página web, con un recurso interno como externo, o con otro sitio web.
+
+    Tienen el atributo obligatorio href, donde le especificamos la ruta del recurso o sitio que 
+    queremos obtener.
+
+    Tambien tiene el atributo target, que configura cómo queremos visualizar el recurso o sitio
+    que solicitamos.
+   -->
+
+   <!-- 
+    Rutas absolutas:
+    - Tiene un protocolo, http o https y son unicas en la red se suelen utilizar para rutas externas.
+    Rutas relativas:
+    - Pueden ser relativas al punto donde nos encontramos o relativas a la raiz del proyecto.
+    - No usan protocolo.
+    - Si el recursos se encuentra en el mismo nivel (en la misma carpeta) ponemos unicamente el nombre del
+    archivo.
+    - Si necesitamos salir de la carpeta actual usaremos ../y se pone uno por cada nivel (carpeta) de la que 
+    queremos salir.
+    -->
+   <h1>Home</h1>
+   <!-- Uso de los enlaces (ruta relativa) -->
+   <a href="./Paginas/contacto.html">Ir a contacto</a>
+   <!-- Ruta absoluta -->
+   <a href="https://google.com">Ir a google</a>
+</body>
+</html>
