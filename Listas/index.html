@@ -13,13 +13,32 @@
     - ol > ordered list: Se utiliza cuando el orden de los elementos es importante (top 10).
     - dl > definition list: Se utiliza para hacer una lista de definiciones (diccionario). No se 
     utilizan muy amenudo.
-    Cada elemento de la lista se representa con la etiqueta <li>, tanto en las ul como en las ol
-   -->
+    Cada elemento de la lista se representa con la etiqueta <li>, tanto en las ul como en las ol.
+
+    Se puden construir listas anidadas:
+
+    <ol>
+    <li>
+      HTML
+      <ul>
+        <li>Estructura</li>
+        <li>Sintaxis</li>
+        <li>Etiquetas</li>
+      </ul>
+    </li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+   </ol> 
+
+    Atributos de las listas
+    - ol > type: Estilo de numeración (1, A, a, I, i), start: Inicio de la secuencia (un numero).
+    - ul > type: Estilo de los items (disc, square, circle).
+   --> 
 
    <h1>Lista</h1>
 
    <h2>Listas desordenadas</h2>
-   <ul>
+   <ul type="circle">
     <li>Pan</li>
     <li>Huevos</li>
     <li>Leche</li>
@@ -36,7 +55,7 @@
    </nav>
    
    <h2>Listas ordenadas</h2>
-   <ol>
+   <ol type="i" start="2">
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
