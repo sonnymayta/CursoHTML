@@ -10,16 +10,24 @@
 
   form: es la etiqueta que engloba nuestro formulario.
   
-  label: sirve para escribir el nombre del campo a rellenar.
+  label: sirve para escribir el nombre del campo a rellenar. Debe tener el atributo for al cual 
+  se le indica un id que lo que hará será emparejar el label con su input correspondiente.
   
   input: sirve para crear un campo que permitira al usuario interactuar.
   
   button: crear botón que permitira enviar el formulario.
  -->
 <body>
+  <!-- Forma antigua o poco común -->
+  <!-- 
+    <label>
+      Nombre
+      <input>
+    </label> 
+  -->
   <form>
-    <label>Nombre</label>
-    <input>
+    <label for="name">Nombre</label>
+    <input id="name">
     <button>Enviar formulario</button>
   </form>
 </body>
