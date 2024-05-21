@@ -18,7 +18,11 @@
     - button: se comporta igual que un botón <button>
     - color: se utiliza para especificar un color
     - date: se utiliza para introducir una fecha
+    - datetime: OBSOLETO
     - datetime-local: fecha y hora, no funciona en firefox
+    - time: se utiliza para introducir la hora
+    - week: se utiliza para introducir el número de la semana del año
+        TIP: Se recomienda usar datetime-local y time para seleccionar fecha y hora
     - email: se utiliza para introducir un email
     - hidden: campo oculto, puede contener valor pero no se mostrara
     - month: se utiliza para introducir un mes
@@ -28,10 +32,8 @@
     - search: se utiliza prar las barras de búsqueda
     - submit: se utiliza para enviar el formulario
     - tel: se utiliza para introducir números telefónicos
-    - text: valor por defecto
-    - time: se utiliza para introducir la hora
-    - url: se utiliza para introducir URLs
-    - week: se utiliza para introducir el número de la semana del año
+    - text: valor por defecto    
+    - url: se utiliza para introducir URLs    
   
   button: crear botón que permitira enviar el formulario.
  -->
@@ -52,7 +54,17 @@
     <!-- Ambos envian el formulario -->
     <input type="submit" value="Enviar formulario">
     <button>Enviar formulario</button>
+  </form>
+    
+  <form>
+    <input type="date">
+    <input type="datetime-local"> 
+    <input type="month">
+    <input type="week">
 
+    <!-- TIP -->
+    <input type="date">
+    <input type="time">
   </form>
 </body>
 </html>
