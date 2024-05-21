@@ -14,6 +14,24 @@
   se le indica un id que lo que hará será emparejar el label con su input correspondiente.
   
   input: sirve para crear un campo que permitira al usuario interactuar.
+    tipos:
+    - button: se comporta igual que un botón <button>
+    - color: se utiliza para especificar un color
+    - date: se utiliza para introducir una fecha
+    - datetime-local: fecha y hora, no funciona en firefox
+    - email: se utiliza para introducir un email
+    - hidden: campo oculto, puede contener valor pero no se mostrara
+    - month: se utiliza para introducir un mes
+    - number: se utiliza para valores numéricos
+    - password: se utiliza para contraseñas
+    - range: se utiliza para establecer un rango
+    - search: se utiliza prar las barras de búsqueda
+    - submit: se utiliza para enviar el formulario
+    - tel: se utiliza para introducir números telefónicos
+    - text: valor por defecto
+    - time: se utiliza para introducir la hora
+    - url: se utiliza para introducir URLs
+    - week: se utiliza para introducir el número de la semana del año
   
   button: crear botón que permitira enviar el formulario.
  -->
@@ -28,7 +46,13 @@
   <form>
     <label for="name">Nombre</label>
     <input id="name">
+    <!-- Usado generalmente para operaciones con JavaScript -->
+    <input type="button" value="Enviar formulario">
+
+    <!-- Ambos envian el formulario -->
+    <input type="submit" value="Enviar formulario">
     <button>Enviar formulario</button>
+
   </form>
 </body>
 </html>
