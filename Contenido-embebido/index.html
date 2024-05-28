@@ -38,15 +38,18 @@
 <body>
   <h1>Contenido embebido</h1>
   <!-- Siempre poner el atributo alt -->
-  <img src="/Contenido-embebido/assets/superman.png" alt="Logo de superman">
-  <img src="/Contenido-embebido/assets/pato.gif" alt="Pato caminando">
+  <img src="/Contenido-embebido/assets/images/superman.png" alt="Logo de superman">
+  <img src="/Contenido-embebido/assets/images/pato.gif" alt="Pato caminando">
 	
-  <img srcset="/Contenido-embebido/assets/Ruisenor-comun.jpg, /Contenido-embebido/assets/Ruisenor-comun.webp 3x" alt="">
+  <img srcset="/Contenido-embebido/assets/images/Ruisenor-comun.jpg, /Contenido-embebido/assets/images/Ruisenor-comun.webp 3x" alt="">
 
-  <!-- Etiqueta nueva, revisar* -->
+  <!-- Etiqueta nueva (picture), revisar* -->
   <picture>
-    <source srcset="/Contenido-embebido/assets/pato.webp" media="(max-width:1200px)">
-    <img src="/Contenido-embebido/assets/superman.png" alt="">
+    <source srcset="/Contenido-embebido/assets/images/pato.webp" media="(max-width:1200px)">
+    <img src="/Contenido-embebido/assets/images/superman.png" alt="">
   </picture>
+
+  <!-- Atributos controls, autoplay, muted -->
+  <audio src="/Contenido-embebido/assets/audio/gwyn.mp3"></audio>
 </body>
 </html>
