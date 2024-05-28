@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    img {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<!-- 
+  Contenido embebido
+  - Es todo el contenido que nos traemos desde fuera.
+  - Estos archivos son los que más peso (tamaño) añaden a un sitio web.
+  - Los tipos más conocidos son:
+    - Imágenes
+    - Audio
+    - Vídeo
+    - Iframes
+
+  Imagenes: los formatos de imágenes para web los podemos clasificar en 2 tipos:
+  - Vectoriales
+    - svg (recomendado siempre que se pueda)
+  - Mapa de bits
+    - jpg
+    - png 8 y 24 (si necesitas transparencia)
+    - gif (si necesitas una imagen animada)
+    - webp (el formato que menos pesa)
+
+		Device Pixel Ratio
+  	Es la realción que existe entre los píxeles reales que tiene el dispositivo y los
+  	píxeles disponibles para "pintar" contenido
+
+  	DPR = pixeles reales / pixeles disponibles
+ -->
+<body>
+  <h1>Contenido embebido</h1>
+  <!-- Siempre poner el atributo alt -->
+  <img src="/Contenido-embebido/assets/superman.png" alt="Logo de superman">
+  <img src="/Contenido-embebido/assets/pato.gif" alt="Pato caminando">
+	
+  <img srcset="/Contenido-embebido/assets/Ruisenor-comun.jpg, /Contenido-embebido/assets/Ruisenor-comun.webp 3x" alt="">
+
+</body>
+</html>
